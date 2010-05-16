@@ -7,6 +7,7 @@ Group:		Applications
 Source0:	http://www.kpdus.com/jad/linux/%{name}lx158.zip
 # Source0-md5:	2f3570f825da2596c62fe14ab902d34f
 URL:		http://www.kpdus.com/jad.html
+BuildRequires:	unzip
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
