@@ -1,7 +1,8 @@
+%define		_enable_debug_packages	0
 Summary:	Jad - the fast JAva Decompiler
 Name:		jad
 Version:	1.5.8e
-Release:	0.1
+Release:	1
 License:	free for non-commercial
 Group:		Applications
 Source0:	http://www.kpdus.com/jad/linux/%{name}lx158.zip
@@ -22,7 +23,7 @@ compiled again.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install jad $RPM_BUILD_ROOT%{_bindir}
+install -p jad $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
